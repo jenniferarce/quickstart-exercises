@@ -77,6 +77,32 @@ export class AppComponent {
 //import {SummaryPipe} from './summary-pipe/summary.pipe';
 //import{BootstrapPanel} from './ng-content-example/bootstrap.panel.component';
 
+<ng-content>:::
+
+//en app.component 
+template:`
+ <bs-panel>
+    <div class="heading">The heading</div>
+    <div class="body">This is the body</div>
+    <div class="body">This is another body</div>
+   </bs-panel>`
+
+// Pipe example : 
+//template: `
+   //{{post.title}}
+   //<br/>
+   //{{post.body | summary}}
+  //`
+
+//export class AppComponent{ 
+//post = {
+   // title: 'Angular tutorial',
+    //body: `
+    //asdasdasdsda e rwrw  ewhg jjghjgh fdsfs dff. dsfdsfsdfrt e tertre v hajkdhkjah 
+    //kajsldja  ermwmr w. dfhkdjf , asdn sa .
+    //`
+  //}
+
 
 //*******************-------------------------
 
