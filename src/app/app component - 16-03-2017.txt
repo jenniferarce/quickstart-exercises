@@ -1,0 +1,91 @@
+16/03/2017
+//app.component:
+
+@Component({
+  selector: 'my-app',
+  template: `
+ 
+  `,
+})
+
+export class AppComponent {
+  }
+}
+
+//*******************-------------------------
+
+//Tweet excercise : 
+
+//import { TweetsComponent } from './tweets/tweets.component';//10/03
+//import { TweetService } from './tweets/tweets.service';
+//import { Tweet } from './tweets/tweet';
+
+
+//template: `
+  //  <div *ngFor="let data of tweets">
+    //<tweetList [data]="data"></tweetList>
+    //</div>
+  //`,
+    //providers: [TweetService]
+//export class AppComponent {
+ //tweets: Tweet[];
+  //constructor(tweetServices: TweetService) {
+    //    this.tweets = tweetServices.getTweets();
+    //}
+//}
+
+//*******************-------------------------
+
+//Zippy exercise:::
+
+//necesario:
+//import{ZippyComponent} from './zippy/zippy.component';
+//import{Passengers} from './zippy/passengers';
+//import{PassengersService} from './zippy/passengers.service';
+
+//en template:
+//  <div *ngFor = "let passenger of passengers">
+        //<zippy [passenger]="passenger"> </zippy>
+    //</div>
+
+
+//en: export class AppComponent {
+  passengers:Passengers[];
+
+  constructor(passengerService:PassengersService){
+    this.passengers = passengerService.getPassengers();
+  //}
+
+//en @Component:
+  providers: [PassengersService]
+
+//*******************-------------------------
+
+//import{ContactFormComponent} from './contact-form/contact-form.component';//13/03
+
+//<contact-form></contact-form>
+
+//*******************-------------------------
+
+//import{SubscribeComponent} from './subscribe-form/subscribe-form.component'; //13/03
+
+//  <subscribe-form></subscribe-form>
+
+//*******************-------------------------
+//PIPES:
+
+//import {SummaryPipe} from './summary-pipe/summary.pipe';
+//import{BootstrapPanel} from './ng-content-example/bootstrap.panel.component';
+
+
+//*******************-------------------------
+
+//import {SignUpFormComponent} from './signup-form/signup-form.component';
+
+// <signup-form></signup-form> 
+
+//*******************-------------------------
+//Password:: necesario::
+//import{PasswordComponent} from './password-form/password-form.component';
+
+//<password-form></password-form>
