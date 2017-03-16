@@ -17,10 +17,11 @@ var PasswordValidators = (function () {
         if (newpass == '' || renewpass == '') {
             return null;
         }
-        if (newpass != renewpass) {
-            return { mismatchedPasswords: true };
-        }
-        return false;
+        // if (newpass != renewpass) {
+        //   return { mismatchedPasswords: true };
+        //  return {equalPassword : true};
+        //} //---> error con el npm start / por el true
+        //    return null;
     };
     return PasswordValidators;
 }());

@@ -22,11 +22,12 @@ export class PasswordValidators {
             return null;
         }
 
-        if (newpass != renewpass) {
-            return { mismatchedPasswords: true };
-        }
+      // if (newpass != renewpass) {
+         //   return { mismatchedPasswords: true };
+          //  return {equalPassword : true};
+        //} //---> error con el npm start / por el true
 
-        return false;
+    //    return null;
     }
 }
 
